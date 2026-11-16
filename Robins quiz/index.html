@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Gör så att sidan kan visa olika tecken rätt -->
+        <meta charset="UTF-8">
+        <!-- Anpassar sidan efter skärmens storlek -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Namnet som visas på webbläsarens flik -->
+        <title>Bayern Munchen 26/27 quiz</title>
+        <!-- Kopplar HTML till CSS-filen -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Skapar en wrapper som håller allt centerad-->
+        <div id="home-section">
+        <div id="wrapper">
+            <div id="top">
+                <div id="top-left">
+                    <img src="bayernlogo.png" alt="Bayern Munchen logo" style="width: 100px; height: auto; vertical-align: top; float: left; margin-right: 20px; padding-top: 25px; padding-left: 15px">
+                    <h1>Bayern Munchen</h1>
+                </div>
+                <div id="top-right">
+                    <span class="divider">|</span>
+                    <a href="#home  -section">HOME</a>
+                    <span class="divider">|</span>
+                    <a href="#bild-section">ALLIANZ ARENA</a>
+                    <span class="divider">|</span>
+                    <a href="#startsida">QUIZ 26/27</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="bild-section">
+        <img src="allianz.jpg" alt="Allianz Arena" style="width: 97.5%; height: 1000px; margin: auto; display: block; border-radius: 40px;">
+        </div>
+        <div id="startsida">
+        <div id="header">
+            <h2>SEASON 26/27</h2>
+            <h1>HOW WELL DO YOU KNOW BAYERN?</h1>
+            <p>Test your knowledge of Bayern Munchen squad</p>
+            <a href="#namnsida">
+                <button>START QUIZ →</button>
+            </a>
+        </div>
+        </div>
+        <div id="namnsida">
+            <h1>But first!</h1>
+            <h2>Enter your name to start the quiz</h2>
+            <input type="text" id="player-name" placeholder="Your name...">
+            <button id="continue-button">Continue →</button>
+        </div>
+        <div id="quiz-section">
+            <h1>FC Bayern Quiz</h1>
+
+        <h2 id="question">Which player is this?</h2>
+        <img id="question-image" src="upamecano.jpg" alt="Bayern player">
+
+        <div id="answer-buttons">
+            <button id="answer-1">Jonathan Tah</button>
+            <button id="answer-2">Dayot Upamecano</button>
+            <button id="answer-3">Hiroki Ito</button>
+            <button id="answer-4">Kim Min Jae</button>
+        </div>
+        <button id="next-button">Continue</button>
+        </div>
+        <!-- Resultatsidan -->
+        <div id="result-section">
+            <h1>Quiz Results</h1>
+            <table id="results-table">
+                <tr>
+                    <td>Name</td>
+                    <td>Points</td>
+                </tr>   
+            </table>
+            <button id="play-again-button">Play Again</button>
+        </div>
+        <hr>
+    <footer>
+        <p>© 2026 - Robin's FC Bayern Munchen quiz 2026/2027 season</p>
+    </footer> 
+    <script src="script.js"></script>
+    </body>
+</html>
