@@ -14,9 +14,6 @@ let startSection = document.getElementById("startsida");
 // Kollar om man klickar på start quiz knappen
 startQuizButton.addEventListener("click", function() {
 
-    // Gömmer startsidan
-    homeSection.style.display = "none";
-
     //gömmer start-sektionen
     startSection.style.display = "none";
 
@@ -110,6 +107,13 @@ let questions = [
         correctAnswer: 3
     }
 ];
+
+
+// Laddar alla bilder i förväg (AI)
+questions.forEach(function(question) {
+    let image = new Image();
+    image.src = question.image;
+});
 
 // Funktion som visar frågan
 function showQuestion() {
