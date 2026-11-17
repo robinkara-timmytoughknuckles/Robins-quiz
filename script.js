@@ -196,7 +196,7 @@ nextButton.addEventListener("click", function() {
           answer2.disabled = false;
           answer3.disabled = false;
           answer4.disabled = false;
-  
+        
           // Återställer färgerna på svarsknapparna
           answer1.style.backgroundColor = "#181A1B";
           answer2.style.backgroundColor = "#181A1B";
@@ -216,8 +216,8 @@ nextButton.addEventListener("click", function() {
       }
   });
 
-// Lista som sparar alla spelares resultat
-let results = [];
+// Lista som sparar alla spelares resultat (AI)
+let results = []; 
 
 // Hämtar resultatsidan från HTML
 let resultSection = document.getElementById("result-section");
@@ -231,7 +231,7 @@ let playAgainButton = document.getElementById("play-again-button");
 // Funktion som sparar spelarens resultat
 function saveResult() {
 
-    // Lägger till spelarens namn och poäng i listan
+    // Lägger till spelarens namn och poäng i listan (AI)
     results.push({
         name: playerName,
         score: score
@@ -242,7 +242,7 @@ function saveResult() {
 // Funktion som visar resultatet i tabellen
 function showResults() {
 
-    // Lägger till en ny rad i tabellen
+    // Lägger till en ny rad i tabellen (AI)
     resultsTable.innerHTML += "<tr><td>" + playerName + "</td><td>" + score + "/5</td></tr>";
 }
 
