@@ -41,7 +41,7 @@ let quizSection = document.getElementById("quiz-section");
 // Kollar om man klickar på Continue
 continueButton.addEventListener("click", function() {
 
-    // Hämtar namnet som spelaren har skrivit
+    // Hämtar namnet som spelaren har skrivit (AI)
     playerName = nameInput.value;
 
     // Gömmer namnsidan
@@ -55,7 +55,7 @@ continueButton.addEventListener("click", function() {
 
 });
 
-// Hämtar svarsknapparna från HTML
+// Hämtar svarsknapparna från HTML (AI)
 let answer1 = document.getElementById("answer-1");
 let answer2 = document.getElementById("answer-2");
 let answer3 = document.getElementById("answer-3");
@@ -71,10 +71,10 @@ let questionText = document.getElementById("question");
 let questionImage = document.getElementById("question-image");
 
 
-// Håller reda på spelarens poäng
+// Spelare börjar med 0 poäng
 let score = 0;
 
-// Håller reda på vilken fråga spelaren är på
+// Håller reda på vilken fråga spelaren är på (AI)
 let currentQuestion = 0;
 
 // Alla frågor i quizet
@@ -114,30 +114,31 @@ let questions = [
 // Funktion som visar frågan
 function showQuestion() {
 
-    // Hämtar den aktuella frågan från listan
+    // Hämtar den aktuella frågan från listan 
     let question = questions[currentQuestion];
 
-    // Visar frågetexten
+    // Visar frågetexten (AI)
     questionText.textContent = question.question;
 
-    // Visar rätt bild
+    // Visar rätt bild (AI)
     questionImage.src = question.image;
 
-    // Visar svarsalternativen
+    // Visar svarsalternativen (AI)
     answer1.textContent = question.answers[0];
     answer2.textContent = question.answers[1];
     answer3.textContent = question.answers[2];
     answer4.textContent = question.answers[3];
 }
 
-// Funktion som kontrollerar spelarens svar
+// Funktion som kontrollerar spelarens svar 
 function checkAnswer(button, answerIndex) {
 
-    // Hämtar den aktuella frågan
+    // Hämtar den aktuella frågan 
     let question = questions[currentQuestion];
 
     // Kontrollerar om svaret är rätt
     if (answerIndex == question.correctAnswer) {
+
         button.style.backgroundColor = "green";
 
         // Ger 1 poäng
@@ -195,7 +196,7 @@ nextButton.addEventListener("click", function() {
           answer2.disabled = false;
           answer3.disabled = false;
           answer4.disabled = false;
-  
+        
           // Återställer färgerna på svarsknapparna
           answer1.style.backgroundColor = "#181A1B";
           answer2.style.backgroundColor = "#181A1B";
@@ -215,8 +216,8 @@ nextButton.addEventListener("click", function() {
       }
   });
 
-// Lista som sparar alla spelares resultat
-let results = [];
+// Lista som sparar alla spelares resultat (AI)
+let results = []; 
 
 // Hämtar resultatsidan från HTML
 let resultSection = document.getElementById("result-section");
@@ -230,7 +231,7 @@ let playAgainButton = document.getElementById("play-again-button");
 // Funktion som sparar spelarens resultat
 function saveResult() {
 
-    // Lägger till spelarens namn och poäng i listan
+    // Lägger till spelarens namn och poäng i listan (AI)
     results.push({
         name: playerName,
         score: score
@@ -241,7 +242,7 @@ function saveResult() {
 // Funktion som visar resultatet i tabellen
 function showResults() {
 
-    // Lägger till en ny rad i tabellen
+    // Lägger till en ny rad i tabellen (AI)
     resultsTable.innerHTML += "<tr><td>" + playerName + "</td><td>" + score + "/5</td></tr>";
 }
 
