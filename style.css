@@ -1,0 +1,399 @@
+body
+{
+    margin: 0px;
+    font-family: Condensed, sans-serif;
+    background-color: #181A1B;
+}
+
+#wrapper
+{
+    margin: auto;
+    width: 100%;
+}
+
+#top
+{
+    width: 100%;
+    height: 100px;
+    background-color: #CA002B;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#top-left 
+{
+    text-align: left;
+    padding-top: 25px;
+
+}
+
+#top-left h1
+{
+    padding-top: 20px;
+    white-space: nowrap;
+}
+#top-right
+{
+    text-align: right;
+    padding-top: 45px;
+    padding-right: 20px;
+}   
+
+#top-right a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.15s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#top-right a:active
+{
+    transform: scale(0.75);
+}
+
+#top-right a:hover
+{
+    color: #8a001e;
+}
+
+.divider
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#header
+{
+    margin-top: 150px;
+}
+#header h2
+{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #CA002B;
+    margin: auto;
+    width: 12.5%;
+    margin-top: 35px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+#header h1
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+#header p
+{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#header button
+{
+    text-align: center;
+    background-color: #CA002B;
+    border-radius: 30px;
+    margin: auto;
+    width: 67.5%;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+    height: 75px;
+    border-color: #CA002B;  
+    margin-bottom: 50px;
+    transition: 0.1s;
+    cursor: pointer;
+}   
+
+#header a
+{
+    text-decoration: none;
+}
+
+#header button:active
+{
+    transform: scale(0.95);
+}
+#header button:hover
+{
+    color:#8a001e
+}
+
+hr
+{
+    background-color: #434343;
+    height: 15px;
+    border: none;
+    width: 97.5%;
+    border-radius: 20px;
+}
+
+footer p
+{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+footer
+{
+    background-color: #CA002B;
+    width: 97.5%;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+#namnsida
+{
+    display: none;
+    margin: auto;
+    width: 70%;
+    background-color: #25292A;
+    border-radius: 20px;
+    border-color: #CA002B;
+    border-width: 20px;
+    border-style: groove;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#namnsida h1
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+#namnsida h2
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#namnsida input
+{
+    display: block;
+    margin: 25px auto;
+    width: 50%;
+    height: 55px;
+    padding-left: 20px;
+    color: white;
+    background-color: #181A1B;
+    border-radius: 12px;
+    border: 5px double #CA002B;
+    font-size: 20px;
+}
+
+#namnsida input::placeholder
+{
+    color: white;
+}
+
+#namnsida button
+{
+    text-align: center;
+    background-color: #CA002B;
+    border-radius: 30px;
+    margin: auto;
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+    height: 75px;
+    border-color: #CA002B;  
+    margin-bottom: 50px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#namnsida button:active
+{
+    transform: scale(0.95);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+#quiz-section
+{
+    display: none;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #181A1B;
+    margin: 50px auto;
+    width: 80%;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#quiz-section h1
+{
+    background-color: #CA002B;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+#question
+{
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#question-image
+{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 25px auto;
+}
+
+#answer-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin: 30px auto;
+    transition: 0.1s;
+}
+
+#answer-buttons :active
+{
+    transform: scale(0.8);
+}
+
+#answer-buttons button
+{
+    background-color: #181A1B;
+    color: white;
+    border: 3px solid white;
+    border-radius: 15px;
+    height: 65px;
+    width: 22%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#answer-buttons button:hover
+{
+    background-color: #434343;
+}
+
+#answer-buttons button:disabled
+{
+    cursor: not-allowed;
+}
+
+#next-button
+{
+    display: none;
+    background-color: #CA002B;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    margin: 20px auto;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#next-button:active
+{
+    transform: scale(0.8);
+}
+
+
+#result-section
+{
+    display: none;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #181A1B;
+    margin: 50px auto;
+    width: 80%;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+#result-section h1
+{
+    background-color: #CA002B;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+#results-table
+{
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background-color: #25292A;
+}
+
+#results-table td
+{
+    border-bottom: 2px solid #434343;
+    padding: 20px;
+}
+
+#results-table tr:first-child
+{
+    background-color: #CA002B;
+    font-weight: bold;
+}
+
+#play-again-button
+{
+    background-color: #CA002B;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    margin: 20px auto;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#play-again-button:active
+{
+    transform: scale(0.8);
+}
+
+#play-again-button:hover
+{
+    color: #8a001e;
+}
